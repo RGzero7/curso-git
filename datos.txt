@@ -69,4 +69,7 @@ primero volver a main
 git checkout main
 git merge nombre (de la rama que queremos volcar en main)
 
+-abortar junta
+git merge --abort
+
 
