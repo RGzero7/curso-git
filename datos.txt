@@ -16,12 +16,6 @@ git rm --cached nombre.extencion
 -etiquetado "commit"
 git commit -m "mensaje"
 
--agregar a la nube
-git remote add origin https://github.com/RGzero7/curso-git.git
-
-
-git status
-
 -pasos para agregar a github
 echo "# curso-git" >> README.md
 git init
@@ -31,16 +25,47 @@ git branch -M main
 git remote add origin https://github.com/RGzero7/curso-git.git
 git push -u origin main
 
+-saber en que rama estoy
+git branch
 
+-ver historial de commit realizados
+git log
+ q para terminar o enter para ver cada commit hasta el final
 
+- ver dirección de GitHub donde se guardan los commit
+git remote -v
 
+- ver los cambios realizados
+git diff
 
+-descartar el ultimo add realizado
+git restore --staged .
 
+-descartar cambios
+git restore .\nombre.extencion
+git restore . (restaura todo)
 
+el proceso para descartar lo últimos cambios es
+git restore --staged .
+git restore .
 
+-devolver todo a un commit en especifico
+git log
+copiamos id del commit 
+git reset --hard aquielID
 
+- Ramas -
+- ver ramas y la activa actualmente
+git branch
+-agregar nueva rama
+git branch nombre
+-moverme entre ramas
+git checkout nombre
+-agregar y moverme a la nueva rama
+git checkout -b nombre
 
-
+-juntar ramas
+primero volver a main
 
 
 
