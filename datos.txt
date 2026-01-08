@@ -1,8 +1,35 @@
-Limpiar pantalla
+-Limpiar pantalla
 clear
 
+-inicializar git en la carpeta
+git init
+
+-tomar en cuenta un archivo
+git add nombre.extencion
+
+-agregar todos los archivos
+git add .
+
+-dejar de tomar en cuenta archivo
+git rm --cached nombre.extencion
+
+-etiquetado "commit"
+git commit -m "mensaje"
+
+-agregar a la nube
+git remote add origin https://github.com/RGzero7/curso-git.git
 
 
+git status
+
+-pasos para agregar a github
+echo "# curso-git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/RGzero7/curso-git.git
+git push -u origin main
 
 
 
