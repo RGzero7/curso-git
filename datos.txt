@@ -75,3 +75,9 @@ git merge --abort
 
 -eliminar ramas
 git branch -d nombre (si hay conflictos como no haber realizado merge, cambia la d minúscula por una mayuscula)
+
+-actualizar el repositorio local con el guardado en GitHub
+git pull origin main
+
+-ahora del local actualizar el repositorio en GitHub
+git push origin main
